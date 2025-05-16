@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./Resources/Images/logo.png" type="image/x-icon/">
+    <link rel="icon" href="Resources/logo/mylogo1.png" type="icon/logo">
+    
+    <title>MY PORTFOLIO</title>
+
+</head>
+<body>
+    <nav aria-label="Primary navigation">
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#training">Trainings/Seminars</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#job">Job Experience</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a class="download"  href="/Resources/My Resume.pdf" download>Download Resume</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+<!-- ----------------------------------------------------- Profile -------------------------------------- -->
+
+        <section id="profile" class="fade-in-section" tabindex="-1" aria-labelledby="profile-title">
+            <img src="Resources/img/profile.jpg" alt="My profile">
+        <div class="profile-info">
+            <h1 id="profile-title">James Romer P. Omas</h1>
+            <p>I am a dedicated Computer Engineering Technology student with a passion for technical problem-solving, networking, workplace safety, and web design. I approach challenges precisely, ensuring efficiency and precision in evry project. My interest in game development drives me to explore immersive digital experiences, while my attention to detail helps me craft engaging and optimized systems. Always eager to learn and refine my sills, I strives to create impactful and innovative solutions.</p>
+        
+        </div>
+        </section>
+
+<!-- ----------------------------------------------------- Education -------------------------------------- -->
+
+        <section id="education" class="fade-in-section" tabindex="-1" aria-labelledby="education-title">
+            <h2 class="section-title" id="education-title">Education</h2>
+        <article class="edu-train-job-proj" role="article">
+            <h3>Elementary</h3>
+            <small>Cabancalan Elementary School - 2017</small>
+        </article>
+        <article class="edu-train-job-proj" role="article">
+            <h3>High School</h3>
+            <small>Canduman National High School - 2023</small>
+            <p>Technical Vocational Livelihood - Major in CSS</p>
+        </article>
+        <article class="edu-train-job-proj" role="article">
+            <h3>College</h3>
+            <small>Center for Industrial Technology and Enterprise - 2023 Present</small>
+            <p>Studied Computer Engineering in Technology.</p>
+        </article>
+        </section>
+<!-- ----------------------------------------------------- Training -------------------------------------- -->
+        <section id="training" class="fade-in-section" tabindex="-1" aria-labelledby="training-title">
+            <h2 class="section-title" id="traning-title">Trainings & Seminar</h2>
+        <article class="edu-train-job-proj" role="article">
+            <h3>Computer System Servicing</h3>
+            <small>Center for Industrial Technology and Enterprise</small>
+            <p>Assembling and Disassembling System Unit.</p>
+        </article>
+
+
+        </section>
+
+<!-- ----------------------------------------------------- Project -------------------------------------- -->
+
+        <section id="project" class="fade-in-section" tabindex="-1" aria-labelledby="project-title">
+            <h2 class="section-title" id="project-title">Projects</h2>
+        <article class="edu-train-job-proj" role="article">
+            <h3>LIBRARY MANAGEMENT SYSTEM (LMS)</h3>
+            <small>Center for Industrial Technology and Enterprise</small>
+            <p></p>
+        </article>
+        </section>
+        
+<!-- ----------------------------------------------------- Job Experience -------------------------------------- -->
+        
+        <section id="job" class="fade-in-section" tabindex="-1" aria-labelledby="job-title">
+            <h2 class="section-title" id="job-title">Job Experience</h2>
+        <article class="edu-train-job-proj" role="article">
+            <h3>Printing Press</h3>
+            <small>Castilix Industrial Corporation - 2021</small>
+            <p>Making Diplomas and Printing papers.</p>
+        </article>
+        </section>
+
+<!-- ----------------------------------------------------- Contact -------------------------------------- -->
+
+        <section id="contact" class="fade-in-section" tabindex="-1" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title">Contact Us</h2>
+        <form id="contactForm" novalidate aria-live="polite" aria-relevant="additions">
+        <label for="name">Name<span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required minlength="2" aria-describedby="nameHelp" />
+        <div id="nameHelp" class="form-message" aria-live="assertive"></div>
+        
+        <label for="email">Email<span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required aria-describedby="emailHelp" />
+        <div id="emailHelp" class="form-message" aria-live="assertive"></div>
+
+        <label for="message">Message<span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required minlength="10" aria-describedby="messageHelp"></textarea>
+        <div id="messageHelp" class="form-message" aria-live="assertive"></div>
+
+        <button type="submit">Send Message</button>
+        <div id="formFeedback" class="form-message" role="alert" aria-live="assertive"></div>
+
+        <div class="social-links" aria-label="Social media links">
+            <a href=https://www.facebook.com/james.omas.758/><i class='bx bxl-facebook-square'></i></a>
+            <a href="mailto:semajsamo@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+            <a href="https://github.com/JamesOmas" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href=https://www.instagram.com/crpzjames/><i class='bx bxl-instagram'></i></a>
+        </div>
+
+        </form>
+    </section>
+    </main>
+
+<script src="script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #121212; /*COLOR FOR THE WHOLE BACKGROUND*/
+    --primary-background-color: #181818; /*FOR THE TOP BACKGROUND*/
+    --secondary-background-color: #00ffea88 ; /*FOR THE FIRST BACKGROUND SHADOW*/
+    --tertiary-background-color: #00ffea44; /*FOR THE SECOND BAKGROUND SHADOW*/
+    --primary-color: #00ffea22 ; /*FOR THE THIRD BACKGROUND SHADOW*/
+    --light-color: #ddd;
+    --dark-color: #1f1f1f;
+    --text-color: #00ffea; /*FOR THE TEXT COLOR AND LINE NEXT TO EVERY SECTION*/
+    --error-color: #ff4c4c; /*FOR MESSAGE ERROR*/
+    --success-color: #7efc79; /*FOR MESSAGE SUCCESS*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.section-title {
+    border-left: 5px solid var(--text-color);
+    padding-left: 12px;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--light-color);
+    scroll-behavior: smooth;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul {
+    margin: 0; padding: 0; list-style: none;
+}
+h2 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 20px 40px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--primary-background-color);
+    box-shadow: 0 2px 6px var(--secondary-background-color);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav li {
+    margin: 0 15px;
+}
+nav ul li .download{
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+    border-radius: 15px;
+}
+nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--text-color);
+    display: inline-block;
+}
+nav a:hover,
+nav a:focus {
+    background: var(--text-color);
+    color: var(--background-color);
+    outline-offset: 3px;
+}
+
+main {
+      padding-top: 60px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+#profile {
+    background: var(--primary-background-color);
+    border-radius: 14px;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+    box-shadow: 0 0 14px var(--tertiary-background-color);
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+#profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid var(--text-color);
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+#profile img:hover {
+    transform: scale(1.12) rotate(5deg);
+}
+.profile-info {
+    flex: 1 1 300px;
+}
+.profile-info h1 {
+    font-size: 3rem;
+    margin: 0 0 12px;
+    color: var(--text-color);
+}
+.profile-info p {
+    line-height: 1.65;
+    font-size: 1.15rem;
+    color: var(--light-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.social-links a {
+    display: flex;
+    background: var(--background-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 8px transparent;
+}
+.social-links a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: var(--text-color);
+    border: 2px solid;
+}
+.social-links a:focus {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    box-shadow: 0 0 18px var(--secondary-background-color);
+    outline: none;
+}
+
+.edu-train-job-proj {
+    background: var(--dark-color);
+    padding: 25px 25px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary-color);
+    transition: box-shadow 0.35s ease;
+}
+.edu-train-job-proj:hover {
+    box-shadow: 0 0 30px var(--secondary-background-color);
+}
+.edu-train-job-proj h3 {
+    margin: 2px 0 10px 0;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.edu-train-job-proj small {
+    font-size: 0.9rem;
+    color: var(--light-color);
+}
+.edu-train-job-proj p {
+    margin-top: 8px;
+    color: var(--light-color);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+form {
+    background: var(--dark-color);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px var(--tertiary-background-color);
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid var(--light-color);
+    background: var(--background-color);
+    color: var(--light-color);
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 48px;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: var(--text-color);
+    outline: none;
+    background: var(--background-color);
+}
+form textarea {
+    min-height: 120px;
+    font-size: 1rem;
+    padding-top: 14px;
+    line-height: 1.5;
+}
+form button {
+    background: var(--text-color);
+    border: none;
+    color: var(--background-color);
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+form button:hover,
+form button:focus {
+    background: var(--text-color);
+    outline: none;
+}
+.form-message {
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    min-height: 24px;
+}
+.form-message.error {
+    color: var(--error-color);
+}
+.form-message.success {
+    color: var(--success-color);
+}
+
+@media (max-width: 790px) {
+    #profile {
+    flex-direction: column;
+    }
+    nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 10px;
+    }
+    nav li {
+    margin: 4px 8px;
+    }
+}
