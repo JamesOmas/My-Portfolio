@@ -10,6 +10,7 @@ document.querySelectorAll('nav a').forEach(link=>{
   });
 });
 
+
 (() => {
   const form = document.getElementById('contactForm');
   const nameInput = form.elements['name'];
@@ -83,3 +84,21 @@ form.addEventListener('submit', e => {
   window.addEventListener('resize', onScroll);
   document.addEventListener('DOMContentLoaded', onScroll);
 })();
+
+window.addEventListener('scroll', () => {
+  const scrollProgress = document.getElementById('scroll-progress');
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (scrollTop / scrollHeight) * 100;
+  scrollProgress.style.width = scrolled + '%';
+});
+
+
+const backToTop = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 200 ? "block" : "none";
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
